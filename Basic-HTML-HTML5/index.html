@@ -4,76 +4,80 @@
     <!-- metadata elements -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Basics</title>
   </head>
   <body>
     <!-- page contents -->
 
-    <!-- Headlines -->
-    <h1>HTML</h1>
-    <h2>HTML</h2>
-    <h3>HTML</h3>
-    <h4>HTML</h4>
-    <h5>HTML</h5>
-    <h6>HTML</h6>
+    <a href="#h1">Headlines</a>
+    <a href="#a">Anchor</a>
+    <a href="#list">List</a>
+    <a href="#form">Form</a>
 
-    <p>Paragraph</p>
-    <main>Main</main>
+    <main>
+      <p>Basics about HTML</p>
 
-    <img
-      src="https://bit.ly/fcc-relaxing-cat"
-      alt="Author standing on a beach with two thumbs up."
-    />
+      <img
+        src="https://bit.ly/fcc-relaxing-cat"
+        alt="Author standing on a beach with two thumbs up."
+      />
 
-    <a href="#"
-      ><img
-        src="https://bit.ly/fcc-running-cats"
-        alt="Three kittens running towards the camera."
-    /></a>
+      <!-- Headlines -->
+      <h1 id="h1">HTML</h1>
+      <h2>HTML</h2>
+      <h3>HTML</h3>
+      <h4>HTML</h4>
+      <h5>HTML</h5>
+      <h6>HTML</h6>
+    </main>
 
-    <a href="https://freecodecamp.org" target="_blank"
-      >this links to freecodecamp.org</a
-    >
+    <section>
+      <h1 id="a">Anchor</h1>
 
-    <a href="#contacts-header">Contacts</a>
+      <p>On images</p>
+      <a href="#">
+        <img
+          src="https://bit.ly/fcc-running-cats"
+          alt="Three kittens running towards the camera."
+        />
+      </a>
 
-    <h2 id="contacts-header">Contacts</h2>
+      <p>Only link</p>
+      <a href="https://freecodecamp.org" target="_blank">freecodecamp.org</a>
 
-    <!-- Dead Links -->
-    <a href="#">cat photos</a>.
+      <p>Dead Link</p>
+      <a href="#">#-Link</a>
+    </section>
 
-    <ul>
-      <li>milk</li>
-      <li>cheese</li>
-    </ul>
+    <section>
+      <h2 id="list">Unordered (bulleted) List</h2>
+      <ul>
+        <li>White</li>
+        <li>Black</li>
+      </ul>
 
-    <input type="text" />
+      <h2>Ordered List Element</h2>
+      <ol>
+        <li>White</li>
+        <li>Black</li>
+      </ol>
+    </section>
 
-    <input type="text" placeholder="this is placeholder text" />
-
-    <p>Things cats love:</p>
-    <ul>
-      <li>cat nip</li>
-      <li>laser pointers</li>
-      <li>lasagna</li>
-    </ul>
-    <p>Top 3 things cats hate:</p>
-    <ol>
-      <li>flea treatment</li>
-      <li>thunder</li>
-      <li>other cats</li>
-    </ol>
-    <form action="/submit-cat-photo">
-      <label><input type="radio" name="indoor-outdoor" /> Indoor</label>
-      <label><input type="radio" name="indoor-outdoor" /> Outdoor</label>
-      <label> <input type="radio" name="test-name" checked /></label>
-      <br />
-      <label><input type="checkbox" name="personality" /> Loving</label>
-      <label><input type="checkbox" name="personality" /> Lazy</label>
-      <label><input type="checkbox" name="personality" /> Energetic</label
-      ><br />
-      <input type="text" placeholder="cat photo URL" required />
-      <button type="submit">Submit</button>
-    </form>
+    <section>
+      <h2>Form</h2>
+      <form id="form" action="/submit-cat-photo">
+        <input type="text" placeholder="cat photo URL" required />
+        <br />
+        <label><input type="radio" name="F-M" /> Female</label>
+        <label><input type="radio" name="F-M" /> Male</label>
+        <br />
+        <label><input type="checkbox" name="personality" /> Loving</label>
+        <label><input type="checkbox" name="personality" /> Lazy</label>
+        <label><input type="checkbox" name="personality" /> Energetic</label>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
   </body>
 </html>
