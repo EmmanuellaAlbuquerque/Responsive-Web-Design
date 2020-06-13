@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      body {
+        /*  6 hexadecimal digits to represent colors, 
+        two each for the red(R), green (G), and blue (B) components. */
+        background-color: #000000;
+
+        /* Custom CSS Variable: To create a CSS variable, 
+        you just need to give it a name with two hyphens 
+        in front of it and assign it a value like this: */
+        --grey-skin: grey;
+      }
+      /* CSS class declaration */
+      .blue-text {
+        color: #ffffff;
+      }
+      h2 {
+        /* Fallback value to a CSS Variable */
+        color: var(--grey-skin, black);
+        font-family: Lobster, Open Sans;
+        background-color: var(--grey-skin);
+        /* Clockwise Notation: padding-top, padding-right, padding-bottom, and padding-left */
+        padding: 10px;
+        margin: 10px;
+        /* Absolute units */
+        /* in and mm refer to inches and millimeters*/
+        font-size: 0.3in;
+        font-size: 8mm;
+      }
+      .larger-image {
+        width: 350px;
+        border-radius: 50%;
+      }
+      #cat-photo-app {
+        /* Relative units */
+        background-color: black;
+        font-size: 1.5em; /*em is based on the size of an element's font*/
+        font-size: 1.5rem;
+      }
+      .thin-red-border {
+        border-color: white;
+        border-width: 5px;
+        border-style: solid;
+      }
+      /* when your screen is smaller or larger than your 
+      media query break point, you can change the value */
+      @media (max-width: 500px) {
+        .larger-image {
+          width: 200px;
+        }
+      }
+      [type="radio"] {
+        margin: 10px 0px 15px 0px;
+      }
+      label {
+        color: white;
+      }
+    </style>
+    <title>Basics</title>
+  </head>
+  <body>
+    <h2 id="cat-photo-app">Hello World!</h2>
+    <h2 class="blue-text">Hello World2!</h2>
+    <img
+      class="larger-image thin-red-border"
+      src="https://bit.ly/fcc-relaxing-cat"
+      alt="Author standing on a beach with two thumbs up."
+    />
+    <label><input type="radio" name="cat-dog" /> Cat</label><br />
+  </body>
+</html>
