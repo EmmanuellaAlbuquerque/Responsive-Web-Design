@@ -1,0 +1,18 @@
+<style>
+  h2 {
+    width: 80vw;
+  }
+  p {
+    width: 75vmin;
+  }
+</style>
+
+<h2>Importantus Ipsum</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem. Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>
+
+<!--     
+  vw(largura da janela de visualização): 10vwseria 10% da largura da janela de visualização.
+    vh(altura da janela de visualização): 3vhseria 3% da altura da janela de visualização.
+    vmin(mínimo da janela de visualização): 70vminseria 70% da dimensão menor da janela de visualização (altura ou largura).
+    vmax(máximo da janela de visualização): 100vmaxseria 100% da dimensão maior da janela de visualização (altura ou largura).  
+-->
