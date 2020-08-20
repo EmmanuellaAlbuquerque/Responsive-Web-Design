@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lobster"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <style>
       body {
         /*  6 hexadecimal digits to represent colors, 
         two each for the red(R), green (G), and blue (B) components. */
@@ -65,17 +53,3 @@
       label {
         color: white;
       }
-    </style>
-    <title>Basics</title>
-  </head>
-  <body>
-    <h2 id="cat-photo-app">Hello World!</h2>
-    <h2 class="blue-text">Hello World2!</h2>
-    <img
-      class="larger-image thin-red-border"
-      src="https://bit.ly/fcc-relaxing-cat"
-      alt="Author standing on a beach with two thumbs up."
-    />
-    <label><input type="radio" name="cat-dog" /> Cat</label><br />
-  </body>
-</html>
