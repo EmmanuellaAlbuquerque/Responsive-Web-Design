@@ -67,14 +67,29 @@
     <section>
       <h2>Form</h2>
       <form id="form" action="/submit-cat-photo">
-        <input type="text" placeholder="cat photo URL" required />
+        <input id="url" type="text" placeholder="cat photo URL" required />
         <br />
-        <label><input type="radio" name="F-M" /> Female</label>
-        <label><input type="radio" name="F-M" /> Male</label>
+        <fieldset>
+          <legend>Gender</legend>
+          <label><input type="radio" name="F-M" /> Female</label>
+          <label><input type="radio" name="F-M" /> Male</label>
+        </fieldset>
         <br />
-        <label><input type="checkbox" name="personality" /> Loving</label>
-        <label><input type="checkbox" name="personality" /> Lazy</label>
-        <label><input type="checkbox" name="personality" /> Energetic</label>
+        <fieldset>
+          <legend>Characteristics</legend>
+          <label>
+            <input type="checkbox" name="personality" />
+            Loving
+          </label>
+          <label>
+            <input type="checkbox" name="personality" />
+            Lazy
+          </label>
+          <label>
+            <input type="checkbox" name="personality" />
+            Energetic
+          </label>
+        </fieldset>
         <br />
         <button type="submit">Submit</button>
       </form>

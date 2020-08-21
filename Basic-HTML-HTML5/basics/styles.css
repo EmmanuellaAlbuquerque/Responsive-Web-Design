@@ -9,10 +9,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-color: white;
 }
 
 a {
-  color: red;
+  color: #331a33;
 }
 
 img {
@@ -23,10 +24,16 @@ img {
 
 main,
 section {
-  border: solid 1px black;
+  border: solid 1px gray;
   margin: 20px;
   padding: 10px;
+  background-color: whitesmoke;
 }
 
 form {
+  height: 50vh;
+  display: grid;
+}
+form #url {
+  padding-left: 10px;
 }
