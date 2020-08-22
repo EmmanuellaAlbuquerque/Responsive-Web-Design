@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  
+  background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+  color: #FFF;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+textarea,
+input,
+select,
+.form-container #submit {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem;
+  
+  background-color: #FFF;
+  border: 0.1rem solid #FFF;
+  border-radius: 0.2rem;
+}
+
+textarea { 
+  resize: vertical;
+  margin-top: 1rem;
+}
+
+fieldset {
+  border: 0.3rem double #FFF;
+}
+
+.form-container {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;  
+  
+  background-color: #344C5A;
+}
+
+.form-container #title,
+.form-container #description {
+  text-align: center;
+}
+
+.form-container .personal-data,
+.form-container .personal-data label,
+.form-container .company-interests,
+.form-container .company-interests #dropdown,
+.form-container #survey-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container .personal-data,
+.form-container .company-interests {
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container .personal-data label,
+.form-container .company-interests textarea,
+.form-container .company-interests fieldset, 
+.form-container .company-interests label,
+.form-container .company-interests #dropdown {
+  margin-bottom: 1.5rem;
+  width: 50rem;
+  max-width: 100%;
+}
+
+.form-container .company-interests textarea {
+  height: 8rem;
+}
+
+.form-container .personal-data input,
+.form-container select {
+  margin-top: 0.5rem;
+}
+
+.form-container #submit {
+  height: 3rem;
+  background-color: #80b446;
+  border: none;
+  transition: background-color ease 0.5s;
+  font-weight: bold;
+  color: #FFF;
+  outline: none;
+  
+  margin-bottom: 1rem;
+}
+
+.form-container #submit:hover {
+  background-color: #6f954b;
+}
+
+@media (max-width: 800px) {
+  .form-container {
+    max-width: 70%;
+  }
+  body {
+    font-size: 1.2rem;
+  }
+  textarea,
+  input,
+  select {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    max-width: 90%;
+  }
+  body {
+    font-size: 1rem;
+  }
+  textarea,
+  input,
+  select,
+  .form-container #submit {
+    font-size: 0.8rem;
+  }
+}
