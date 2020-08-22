@@ -1,0 +1,5 @@
+- [x] Crie uma página de homenagem: [tribute page](https://codepen.io/EmmanuellaAlbuquerque/full/wvGoawM)
+- [x] Construir um Formulário de Pesquisa: [survey form page](https://codepen.io/EmmanuellaAlbuquerque/pen/KKzNMjO)
+- [ ] Crie uma página de destino do produto:
+- [ ] Crie uma página de documentação técnica:
+- [ ] Crie uma página da Web de portfólio pessoal:
