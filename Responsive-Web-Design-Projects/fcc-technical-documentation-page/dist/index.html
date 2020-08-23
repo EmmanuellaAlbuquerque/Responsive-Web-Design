@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC: Technical Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div class="doc-content">
+<nav id="navbar">
+  <header>SVG Documentation</header>
+  <ul>
+    <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+    <li><a href="#&lt;animate&gt;" class="nav-link">&lt;animate&gt;</a></li>
+    <li><a href="#&lt;circle&gt;" class="nav-link">&lt;circle&gt;</a></li>
+    <li><a href="#&lt;ellipse&gt;" class="nav-link">&lt;ellipse&gt;</a></li>
+    <li><a href="#&lt;filter&gt;" class="nav-link">&lt;filter&gt;</a></li>
+    <li><a href="#&lt;line&gt;" class="nav-link">&lt;line&gt;</a></li>
+    <li><a href="#&lt;linearGradient&gt;" class="nav-link">&lt;linearGradient&gt;</a></li>
+    <li><a href="#&lt;path&gt;" class="nav-link">&lt;path&gt;</a></li>
+    <li><a href="#&lt;polygon&gt;" class="nav-link">&lt;polygon&gt;</a></li>
+    <li><a href="#&lt;text&gt;" class="nav-link">&lt;text&gt;</a></li>
+    <li><a href="#Reference" class="nav-link">Reference</a></li>
+  </ul>
+</nav>
+  
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>Scalable Vector Graphics (SVG) are an XML-based markup language for describing two-dimensional based vector graphics. As such, it's a text-based, open Web standard for describing images that can be rendered cleanly at any size and are designed specifically to work well with other web standards including CSS, DOM, JavaScript, and SMIL. SVG is, essentially, to graphics what HTML is to text.</p>
+      <p>SVG images and their related behaviors are defined in XML text files, which means they can be searched, indexed, scripted, and compressed. Additionally, this means they can be created and edited with any text editor or with drawing software.</p>
+      <p>In summary</p>
+      <ul>
+        <li>searched</li>
+        <li>indexed</li>
+        <li>scripted</li>
+        <li>compressed</li>
+        <li>created</li>
+        <li>edited</li>
+      </ul>
+      <p>SVG has been developed by the World Wide Web Consortium (W3C) since 1999.</p>
+    </article>
+  </section>
+  
+  <section class="main-section" id="&lt;animate&gt;">
+    <header>&lt;animate&gt;</header>
+    <article>
+      <p>The SVG &lt;animate&gt; element provides a way to animate an attribute of an element over time.</p>
+      <pre><code>&lt;svg&nbsp;viewBox=&quot;0&nbsp;0&nbsp;10&nbsp;10&quot;&nbsp;xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;<br/>&nbsp;&nbsp;&lt;rect&nbsp;width=&quot;10&quot;&nbsp;height=&quot;10&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;animate&nbsp;attributeName=&quot;rx&quot;&nbsp;values=&quot;0;5;0&quot;&nbsp;dur=&quot;10s&quot;&nbsp;repeatCount=&quot;indefinite&quot;&nbsp;/&gt;<br/>&nbsp;&nbsp;&lt;/rect&gt;<br/>&lt;/svg&gt;
+      </code></pre>
+      
+      <span>Result</span>
+      <iframe src="https://mdn.mozillademos.org/en-US/docs/Web/SVG/Element/animate$samples/Exemple?revision=1593085" frameborder="0">
+      </iframe>
+
+      <pre><code>&lt;svg&nbsp;viewBox=&quot;0&nbsp;0&nbsp;200&nbsp;200&quot;&nbsp;xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;<br/>&nbsp;&nbsp;&lt;rect&nbsp;x=&quot;10&quot;&nbsp;y=&quot;10&quot;&nbsp;height=&quot;100&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;animate&nbsp;attributeName=&quot;width&quot;&nbsp;fill=&quot;freeze&quot;&nbsp;from=&quot;100&quot;&nbsp;to=&quot;150&quot;&nbsp;dur=&quot;3s&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/rect&gt;<br/>&lt;/svg&gt;
+      </code></pre>
+      
+      <span>Result</span>
+      <iframe src="https://mdn.mozillademos.org/en-US/docs/Web/SVG/Attribute/From$samples/topExample?revision=1562526" frameborder="0">
+      </iframe>
+    </article>
+  </section>
+  
+  <section class="main-section" id="&lt;circle&gt;">
+    <header>&lt;circle&gt;</header>
+    <article>
+      <p>The &lt;circle&gt; SVG element is an SVG basic shape, used to draw circles based on a center point and a radius.</p>
+      <pre><code>&lt;svg&nbsp;viewBox=&quot;0&nbsp;0&nbsp;100&nbsp;100&quot;&nbsp;xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;<br/>&nbsp;&nbsp;&lt;circle&nbsp;cx=&quot;50&quot;&nbsp;cy=&quot;50&quot;&nbsp;r=&quot;50&quot;/&gt;<br/>&lt;/svg&gt;
+      </code></pre>
+      
+      <span>Result</span>
+      <iframe src="https://mdn.mozillademos.org/en-US/docs/Web/SVG/Element/circle$samples/Example?revision=1547896" frameborder="0">
+      </iframe>
+    </article>
+  </section>
+  
+  <section class="main-section" id="&lt;ellipse&gt;">
+    <header>&lt;ellipse&gt;</header>
+    <article>
+      <p>The &lt;ellipse&gt; element is an SVG basic shape, used to create ellipses based on a center coordinate, and both their x and y radius.</p>
+      <p>Note: Ellipses are unable to specify the exact orientation of the ellipse (if, for example, you wanted to draw an ellipse tilted at a 45 degree angle), but it can be rotated by using the transform attribute.</p>
+      <pre><code>&lt;svg&nbsp;viewBox=&quot;0&nbsp;0&nbsp;200&nbsp;100&quot;&nbsp;xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;<br/>&nbsp;&nbsp;&lt;ellipse&nbsp;cx=&quot;100&quot;&nbsp;cy=&quot;50&quot;&nbsp;rx=&quot;100&quot;&nbsp;ry=&quot;50&quot;&nbsp;/&gt;<br/>&lt;/svg&gt;
+      </code></pre>
+      
+      <span>Result</span>
+      <iframe src="https://mdn.mozillademos.org/en-US/docs/Web/SVG/Element/ellipse$samples/LiveSample?revision=1539294" frameborder="0">
+      </iframe>
+    </article>
+  </section>
+  
+  <section class="main-section" id="&lt;filter&gt;">
+    <header>&lt;filter&gt;</header>
+    <article>
+      <p>The &lt;filter&gt; SVG element defines a custom filter effect by grouping atomic filter primitives. It is never rendered itself, but must be used by the filter attribute on SVG elements, or the filter CSS property for SVG/HTML elements.</p>
+      <pre><code>&lt;svg&nbsp;width=&quot;230&quot;&nbsp;height=&quot;120&quot;&nbsp;xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;<br/>&nbsp;&lt;filter&nbsp;id=&quot;blurMe&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&lt;feGaussianBlur&nbsp;stdDeviation=&quot;5&quot;/&gt;<br/>&nbsp;&lt;/filter&gt;<br/><br/>&nbsp;&lt;circle&nbsp;cx=&quot;60&quot;&nbsp;cy=&quot;60&quot;&nbsp;r=&quot;50&quot;&nbsp;fill=&quot;green&quot;&nbsp;/&gt;<br/><br/>&nbsp;&lt;circle&nbsp;cx=&quot;170&quot;&nbsp;cy=&quot;60&quot;&nbsp;r=&quot;50&quot;&nbsp;fill=&quot;green&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filter=&quot;url(#blurMe)&quot;&nbsp;/&gt;<br/>&lt;/svg&gt;
+      </code></pre>
+      
+      <span>Result</span>
+      <iframe src="https://mdn.mozillademos.org/en-US/docs/Web/SVG/Element/filter$samples/Example?revision=1612187" frameborder="0">
+      </iframe>
+    </article>
+  </section>
+  
+  <section class="main-section" id="&lt;line&gt;">
+    <header>&lt;line&gt;</header>
+    <article>
+      <p>The &lt;line&gt; element is an SVG basic shape used to create a line connecting two points.</p>
+      <pre><code>&lt;svg&nbsp;viewBox=&quot;0&nbsp;0&nbsp;100&nbsp;100&quot;&nbsp;xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;<br/>&nbsp;&nbsp;&lt;line&nbsp;x1=&quot;0&quot;&nbsp;y1=&quot;80&quot;&nbsp;x2=&quot;100&quot;&nbsp;y2=&quot;20&quot;&nbsp;stroke=&quot;black&quot;&nbsp;/&gt;<br/><br/>&nbsp;&nbsp;&lt;!--&nbsp;If&nbsp;you&nbsp;do&nbsp;not&nbsp;specify&nbsp;the&nbsp;stroke<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color&nbsp;the&nbsp;line&nbsp;will&nbsp;not&nbsp;be&nbsp;visible&nbsp;--&gt;<br/>&lt;/svg&gt;
+      </code></pre>
+      
+      <span>Result</span>
+      <iframe src="https://mdn.mozillademos.org/en-US/docs/Web/SVG/Element/line$samples/Example?revision=1616606" frameborder="0">
+      </iframe>
+    </article>
+  </section>
+  
+  <section class="main-section" id="&lt;linearGradient&gt;">
+    <header>&lt;linearGradient&gt;</header>
+    <article>
+      <p>The &lt;linearGradient&gt; element lets authors define linear gradients that can be applied to fill or stroke of graphical elements.</p>
+      <pre><code>&lt;svg&nbsp;viewBox=&quot;0&nbsp;0&nbsp;10&nbsp;10&quot;&nbsp;xmlns=&quot;http://www.w3.org/2000/svg&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;<br/>&nbsp;&nbsp;&lt;defs&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;linearGradient&nbsp;id=&quot;myGradient&quot;&nbsp;gradientTransform=&quot;rotate(90)&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;stop&nbsp;offset=&quot;5%&quot;&nbsp;&nbsp;stop-color=&quot;gold&quot;&nbsp;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;stop&nbsp;offset=&quot;95%&quot;&nbsp;stop-color=&quot;red&quot;&nbsp;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/linearGradient&gt;<br/>&nbsp;&nbsp;&lt;/defs&gt;<br/>&nbsp;<br/>&nbsp;&nbsp;&lt;!--&nbsp;using&nbsp;my&nbsp;linear&nbsp;gradient&nbsp;--&gt;<br/>&nbsp;&nbsp;&lt;circle&nbsp;cx=&quot;5&quot;&nbsp;cy=&quot;5&quot;&nbsp;r=&quot;4&quot;&nbsp;fill=&quot;url('#myGradient')&quot;&nbsp;/&gt;<br/>&lt;/svg&gt;
+      </code></pre>
+      
+      <span>Result</span>
+      <iframe src="https://mdn.mozillademos.org/en-US/docs/Web/SVG/Element/linearGradient$samples/Exemple?revision=1546870" frameborder="0">
+      </iframe>
+    </article>
+  </section>
+  
+  <section class="main-section" id="&lt;path&gt;">
+    <header>&lt;path&gt;</header>
+    <article>
+      <p>The &lt;path&gt; SVG element is the generic element to define a shape. All the basic shapes can be created with a path element.</p>
+      <pre><code>&lt;svg&nbsp;viewBox=&quot;0&nbsp;0&nbsp;100&nbsp;100&quot;&nbsp;xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;<br/>&nbsp;&nbsp;&lt;path&nbsp;d=&quot;M&nbsp;10,30<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;20,20&nbsp;0,0,1&nbsp;50,30<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;20,20&nbsp;0,0,1&nbsp;90,30<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q&nbsp;90,60&nbsp;50,90<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q&nbsp;10,60&nbsp;10,30&nbsp;z&quot;/&gt;<br/>&lt;/svg&gt;
+      </code></pre>
+      
+      <span>Result</span>
+      <iframe src="https://mdn.mozillademos.org/en-US/docs/Web/SVG/Element/path$samples/Example?revision=1526455" frameborder="0">
+      </iframe>
+    </article>
+  </section>
+  
+  <section class="main-section" id="&lt;polygon&gt;">
+    <header>&lt;polygon&gt;</header>
+    <article>
+      <p>The &lt;polygon&gt; element defines a closed shape consisting of a set of connected straight line segments. The last point is connected to the first point.</p>
+      <pre><code>&lt;svg&nbsp;viewBox=&quot;0&nbsp;0&nbsp;200&nbsp;100&quot;&nbsp;xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;<br/>&nbsp;&nbsp;&lt;!--&nbsp;Example&nbsp;of&nbsp;a&nbsp;polygon&nbsp;with&nbsp;the&nbsp;default&nbsp;fill&nbsp;--&gt;<br/>&nbsp;&nbsp;&lt;polygon&nbsp;points=&quot;0,100&nbsp;50,25&nbsp;50,75&nbsp;100,0&quot;&nbsp;/&gt;<br/><br/>&nbsp;&nbsp;&lt;!--&nbsp;Example&nbsp;of&nbsp;the&nbsp;same&nbsp;polygon&nbsp;shape&nbsp;with&nbsp;stroke&nbsp;and&nbsp;no&nbsp;fill&nbsp;--&gt;<br/>&nbsp;&nbsp;&lt;polygon&nbsp;points=&quot;100,100&nbsp;150,25&nbsp;150,75&nbsp;200,0&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fill=&quot;none&quot;&nbsp;stroke=&quot;black&quot;&nbsp;/&gt;<br/>&lt;/svg&gt;
+      </code></pre>
+      
+      <span>Result</span>
+      <iframe src="https://mdn.mozillademos.org/en-US/docs/Web/SVG/Element/polygon$samples/Exemple?revision=1616820" frameborder="0">
+      </iframe>
+    </article>
+  </section>
+  
+  <section class="main-section" id="&lt;text&gt;">
+    <header>&lt;text&gt;</header>
+    <article>
+      <p>The SVG &lt;text&gt; element draws a graphics element consisting of text. It's possible to apply a gradient, pattern, clipping path, mask, or filter to &lt;text&gt;, like any other SVG graphics element.</p>
+      <p>If text is included in SVG not inside of a &lt;text&gt; element, it is not rendered. This is different than being hidden by default, as setting the display property won't show the text.</p>
+      <pre><code>&lt;svg&nbsp;viewBox=&quot;0&nbsp;0&nbsp;240&nbsp;80&quot;&nbsp;xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;<br/>&nbsp;&nbsp;&lt;style&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;.small&nbsp;{&nbsp;font:&nbsp;italic&nbsp;13px&nbsp;sans-serif;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;.heavy&nbsp;{&nbsp;font:&nbsp;bold&nbsp;30px&nbsp;sans-serif;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Note&nbsp;that&nbsp;the&nbsp;color&nbsp;of&nbsp;the&nbsp;text&nbsp;is&nbsp;set&nbsp;with&nbsp;the&nbsp;&nbsp;&nbsp;&nbsp;*<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;fill&nbsp;property,&nbsp;the&nbsp;color&nbsp;property&nbsp;is&nbsp;for&nbsp;HTML&nbsp;only&nbsp;*/<br/>&nbsp;&nbsp;&nbsp;&nbsp;.Rrrrr&nbsp;{&nbsp;font:&nbsp;italic&nbsp;40px&nbsp;serif;&nbsp;fill:&nbsp;red;&nbsp;}<br/>&nbsp;&nbsp;&lt;/style&gt;<br/><br/>&nbsp;&nbsp;&lt;text&nbsp;x=&quot;20&quot;&nbsp;y=&quot;35&quot;&nbsp;class=&quot;small&quot;&gt;My&lt;/text&gt;<br/>&nbsp;&nbsp;&lt;text&nbsp;x=&quot;40&quot;&nbsp;y=&quot;35&quot;&nbsp;class=&quot;heavy&quot;&gt;cat&lt;/text&gt;<br/>&nbsp;&nbsp;&lt;text&nbsp;x=&quot;55&quot;&nbsp;y=&quot;55&quot;&nbsp;class=&quot;small&quot;&gt;is&lt;/text&gt;<br/>&nbsp;&nbsp;&lt;text&nbsp;x=&quot;65&quot;&nbsp;y=&quot;55&quot;&nbsp;class=&quot;Rrrrr&quot;&gt;Grumpy!&lt;/text&gt;<br/>&lt;/svg&gt;
+      </code></pre>
+      
+      <span>Result</span>
+      <iframe src="https://mdn.mozillademos.org/en-US/docs/Web/SVG/Element/text$samples/Example?revision=1630467" frameborder="0">
+      </iframe>
+    </article>
+  </section>
+  
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank">MDN</a>.</p>
+    </article>
+  </section>
+</main>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
