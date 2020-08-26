@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 1.2rem;
+  
+  color: #333;
+  background-color: #FFF;
+}
+
+a {
+  text-decoration: none;
+/*   color: #3b4b4b; */
+  
+  color: #333;
+  font-size: 1.5rem;
+}
+
+hr {
+  color: #333;
+}
+
+#navbar {
+  background-color: #FCFC99;
+  padding: 1rem;
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.internals-links ul {
+  display: flex;
+  
+  list-style: none;
+}
+
+.internals-links ul li {
+  margin-right: 1rem;  
+}
+
+/* NAVBAR LINK ANIMATION */
+.internals-links ul li a {
+  position: relative;
+}
+
+.internals-links ul li a::after {
+  content: '';
+  
+  top: 0;
+  left: 0;
+  position: absolute;
+  
+  height: 100%;
+  width: 100%;
+  
+  border-bottom: 0.3rem solid #333;
+  
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+  opacity: 0;
+}
+
+.internals-links ul li a:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ---------------------- */
+
+#welcome-section {
+  height: 100vh;
+  margin-top: 50px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section img {
+  width: 30%;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.dev-container {
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.dev-container .name-container {
+  margin-bottom: 1.5rem;
+}
+
+.visual-profile .sourcerer img {
+  height: 40px;
+  width: 40px;
+}
+
+.visual-profile a:hover {
+  color: #04736b;
+}
+
+#projects {  
+  min-height: 100vh;
+  padding: 1rem;
+  margin: 1rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects h2 {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+#projects .button {  
+  width: 15rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 0.2rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 1.2rem;
+  
+  color: #333;
+  background-color: #FCFC99;
+  cursor: pointer;
+}
+
+#projects .button:hover {
+  opacity: 0.8;
+}
+
+#projects .button span {
+  margin-right: 12px;
+  text-align: center;
+}
+
+#projects .projects-container {
+
+  /* powerfull resize */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
+  grid-gap: 4rem;
+  /*------------------*/
+  
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 4.0rem;
+  justify-content: center;
+}
+
+#projects .project-tile {  
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  
+/*   min-height: 158.8px; */
+  height: 232px;
+  width: 100%;
+  
+  background-color: #FCFC99;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.2s ease 0s;
+}
+
+#projects .project-tile:hover {
+  background-color: #4A4A4E;
+  color: #FFF;
+  
+  transform: scale(1.05);
+}
+
+#projects .project-tile:hover::before {
+  content: '< ';
+}
+
+#projects .project-tile:hover::after {
+  content: ' />';
+}
+
+#projects .project-tile img {  
+  height: 100%;
+  width: calc(100%/1.5);
+}
+
+#projects .project-tile figcaption {
+  text-align: center;
+  padding: 1rem;
+}
+
+#contact {
+  background-color: #FFF;
+  height: 40vh;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact .contact-content {
+  max-width: 500px;
+  
+  word-wrap: break-word;
+}
+
+#contact .contact-content blockquote {
+  margin-top: 1rem;
+}
+
+#contact .social-container {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#contact .social-container a {
+  margin-right: 1rem;
+}
+
+#contact .social-container a i {
+  color: #BBC7D3;
+}
+
+#contact .social-container a i:hover {
+  color: #4A4A4E;
+}
+
+footer {
+  text-align: center;
+  
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+footer i {
+  color: #333;
+}
+
+footer a {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
