@@ -1,6 +1,4 @@
-<script src="https://kit.fontawesome.com/c668a15bf6.js" crossorigin="anonymous"></script>
-
-## Links dos projetos no Codepen <i class="fab fa-codepen"></i>
+## Links dos projetos no Codepen
 
 ### Tribute Page
 
@@ -30,4 +28,4 @@
 
 ![Personal Portfolio](images/personal-portfolio.png)
 
-- [x] Crie uma página da Web de portfólio pessoal: [personal portfolio page](https://codepen.io/EmmanuellaAlbuquerque/pen/qBZRPQg)
+- [x] Crie uma página da Web de portfólio pessoal: [personal portfolio page](https://codepen.io/EmmanuellaAlbuquerque/full/qBZRPQg)
